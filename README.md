@@ -59,9 +59,3 @@ POST /workouts/1/exercises/1/workout_exercises
 - **WorkoutExercise**: workout_id, exercise_id, reps, sets, duration_seconds
 
 Many-to-many: Workout ↔ Exercise through WorkoutExercise.
-
-## Validations
-
-- Table: CheckConstraints on name length, duration > 0, reps/sets or duration required
-- Model: @validates on name, category, duration, date, reps, sets
-- Schema: Mirrors model validations for request integrity
